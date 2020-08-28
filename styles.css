@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+body {
+       background: linear-gradient(307deg, #105e01, #bec703, #c703ba, #144ffa);
+    background-size: 800% 800%;
+
+    -webkit-animation: bgGradient 5s ease infinite;
+    -moz-animation: bgGradient 5s ease infinite;
+    -o-animation: bgGradient 5s ease infinite;
+    animation: bgGradient 5s ease infinite;
+}
+
+@-webkit-keyframes bgGradient {
+    0%{background-position:26% 0%}
+    50%{background-position:75% 100%}
+    100%{background-position:26% 0%}
+}
+@-moz-keyframes bgGradient {
+    0%{background-position:26% 0%}
+    50%{background-position:75% 100%}
+    100%{background-position:26% 0%}
+}
+@-o-keyframes bgGradient {
+    0%{background-position:26% 0%}
+    50%{background-position:75% 100%}
+    100%{background-position:26% 0%}
+}
+@keyframes bgGradient {
+    0%{background-position:26% 0%}
+    50%{background-position:75% 100%}
+    100%{background-position:26% 0%}
+}
+.keys {
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+kbd {
+    display: block;
+    font-family: 'Russo One', sans-serif;
+    font-size: 40px;
+}
+.key {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 1rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem;
+    transition: all 0.07s;
+    width: 100px;
+    text-align: center;
+    color: #fff;
+    background: rgba(0,0,0,0.4);
+    text-shadow: 0 0 5px #000;
+}
+.playing {
+    transform: scale(1.1);
+    border-color: #ff4a26;
+    box-shadow: 0 0 10px #ff4a26;
+}
+
+@media (max-width: 1172px) {
+    .keys {
+        flex-wrap: wrap;
+    }
+}
